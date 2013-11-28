@@ -1,0 +1,20 @@
+Site instructions
+
+Phase 1
+1. Create an HTML/CSS file of the site based on the design found at "screenshots/main.png"
+2. Do not work on the slider for now, it will be included on phase 2
+3. The site width is 960px and centered on the browser
+4. Buttons(with play icon) turn gradient black when hovered (see screenshots/hover-state.png for details)
+5. Try to copy the design as close as possible
+6. Push the first phase to Github after you're done
+
+Additional site info
+Fonts Used - open sans and san-serif (google on how to use "open sans" fonts)
+Primary colors - 
+	Yellow = #f2ad30
+	Green = #64ab26
+	Teel Green = #38a6a6
+
+
+Phase 2
+1. Do the image slider.
