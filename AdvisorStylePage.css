@@ -187,13 +187,13 @@ p.paraBox
 	clear:both;
 	width:100%;
 	background-color:black;
-	padding:85px;
+	padding:90px;
 }
 
 
 #containerFooter 
 { 
-	position:relative;
+	position:absolute;
 	width:100%;
 }
 	
@@ -232,12 +232,17 @@ p.paraBox
 
 .contents
 {
-	font-size:10px;
-	float:right;
+	font-size:12px;
+	float:left;
 	padding-bottom:20px;
-	padding-right:160px;
+	padding-left:10px;
 	font-weight: bold;
 	margin-top:0;
+}
+
+.img
+{
+	float:left;
 }
 
 
