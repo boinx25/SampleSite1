@@ -39,7 +39,7 @@ p.AdvisorText
 {
 	position:relative;
 	top:-40px;
-	left:450px;
+	left: 450px;
 	width:5%;
 	display:inline;
 	word-spacing: 60px;
@@ -58,16 +58,6 @@ a.headerLinks:link
 a.headerLinks:visited
 {
 	color:#00BFFF;
-}
-
-a.headerLinks:hover
-{
-	background-color:gray;
-}
-
-a.headerLinks:active
-{
-	background-color:black;
 }
 
 #leftImg
@@ -109,7 +99,7 @@ img.banner
 #pic
 {
 	float:right;
-	padding-top:20px;
+	padding-top:10px;
 	padding-right:20px;
 }
 
@@ -118,8 +108,6 @@ img.banner
 {
 
 	display:block;
-	height:40px;
-	width:270px;
 	border: 2px solid white;
 	box-shadow:rgba(0,0,0,0.5) 0px 0px 10px;
 
@@ -127,10 +115,11 @@ img.banner
 
 	/*Button Title*/
 	color:white;
-	font-weight:bold;
-	padding-top:20px;
-	padding-left:15px;
-	font-size:25px;
+	padding-top:10px;
+	padding-left:30px;
+	padding-bottom:13px;
+	font-size:20px;
+	font-weight: bold;
 	text-decoration: none;
 
 }
@@ -171,12 +160,11 @@ img.banner
 
 #paraBox
 {
-	display: block;
-	height:206px;
-	width:285px;
+	height:245px;
 	background:#38a6a6;
 	border: 2px solid white;
 	margin-top: 5px;
+	box-shadow:rgba(0,0,0,0.5) 0px 0px 10px;
 }
 
 p.paraBox
@@ -184,13 +172,12 @@ p.paraBox
 	
 	padding:30px;
 	color:white;
-	font-size:18px;
+	font-size:17px;
 	font-weight: bold;
 }
 
 #footer
 {
-	clear:both;
 	width:100%;
 	background-color:black;
 	padding:90px 0;
@@ -206,29 +193,6 @@ p.paraBox
 	color:white;
 }
 
-.containerCall
-{
-	position:relative;
-	width: 25%;
-	float:left;
-	color: white;
-}
-
-.containerContact
-{
-	position:relative;
-	width: 25%;
-	float:left;
-	color: white;
-}
-
-.containerCopyright
-{
-	position:relative;
-	width: 25%;
-	float:left;
-	color: white;
-}
 
 .contents
 {
@@ -243,6 +207,11 @@ p.paraBox
 .imgFooter
 {
 	float:left;
+}
+
+.clearfix
+{
+	clear:both;
 }
 
 
