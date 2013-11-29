@@ -1,6 +1,7 @@
 body
 {
 	background-color: lightgray;
+	font-family:'Open Sans',sans-serif;
 }
 .content
 {
@@ -11,7 +12,6 @@ body
 #header
 {
 	width:100%;
-	height:170px;
 	background-color:white;
 }
 
@@ -42,7 +42,7 @@ p.AdvisorText
 {
 	position:relative;
 	top:-95px;
-	padding-left: 450px;
+	padding-left: 500px;
 	width:5%;
 	display:inline;
 	word-spacing: 60px;
@@ -54,7 +54,7 @@ p.AdvisorText
 
 a.headerLinks:link
 {
-	font-family:'Open Sans', sans-serif;
+	
 	text-decoration: none;
 }
 
@@ -108,77 +108,57 @@ img.banner
 }
 
 
-a.button
+.button
 {
 
 	display:block;
 	height:40px;
 	width:270px;
+	border: 2px solid white;
+	box-shadow:rgba(0,0,0,0.5) 0px 0px 10px;
+
+
+
+	/*Button Title*/
+	color:white;
+	font-weight:bold;
+	padding-top:20px;
+	padding-left:15px;
+	font-size:25px;
+	text-decoration: none;
+
+}
+
+
+#button1
+{
 	background:linear-gradient(to top,#f2ad30,white);
-	border: 2px solid white;
-
-
-	/*Button Title*/
-	font-family:"Open Sans", sans-serif;
-	color:white;
-	font-weight:bold;
-	padding-top:20px;
-	padding-left:15px;
-	font-size:25px;
-	text-decoration: none;
 
 }
 
-a.button:hover
+#button1:hover
 {
 	background:linear-gradient(to top,black,white);
 }
 
 
-a.button2
+#button2
 {
-	display: block;
-	height:40px;
-	width:270px;
 	background:linear-gradient(to top,#64ab26,white);
-	border: 2px solid white;
-
-	/*Button Title*/
-	font-family:"Open Sans", sans-serif;
-	color:white;
-	font-weight:bold;
-	padding-top:20px;
-	padding-left:15px;
-	font-size:25px;
-	text-decoration: none;
 
 }
 
-a.button2:hover
+#button2:hover
 {
 	background:linear-gradient(to top,black,white);
 }
 
-a.button3
+#button3
 {
-	display: block;
-	height:40px;
-	width:270px;
 	background:linear-gradient(to top,#38a6a6,white);
-	border: 2px solid white;
-
-	/*Button Title*/
-	font-family:"Open Sans", sans-serif;
-	color:white;
-	font-weight:bold;
-	padding-top:20px;
-	padding-left:15px;
-	font-size:25px;
-	text-decoration: none;
-
 }
 
-a.button3:hover
+#button3:hover
 {
 	background:linear-gradient(to top,black,white);
 }
@@ -195,7 +175,7 @@ a.button3:hover
 
 p.paraBox
 {
-	font-family:("Open Sans",sans-serif);
+	
 	padding:30px;
 	color:white;
 	font-size:18px;
@@ -205,10 +185,9 @@ p.paraBox
 #footer
 {
 	clear:both;
-	margin:0 auto;
-	height:30px;
+	width:100%;
 	background-color:black;
-	padding:80px;
+	padding:85px;
 }
 
 
@@ -253,11 +232,10 @@ p.paraBox
 
 .contents
 {
-	font-family:"Open Sans",sans-serif;
 	font-size:10px;
 	float:right;
 	padding-bottom:20px;
-	padding-right:50px;
+	padding-right:160px;
 	font-weight: bold;
 	margin-top:0;
 }
