@@ -1,7 +1,7 @@
 body
 {
 	background-color: lightgray;
-	font-family:'Open Sans',sans-serif;
+	font-family:"Open Sans",sans-serif;
 }
 .content
 {
@@ -31,8 +31,6 @@ p.AdvisorText
 	position:relative;
 	top:0px;
 	left:50px;
-	padding-bottom:0px;
-	padding-left: 0px;
 	margin:0 auto;
 }
 
@@ -41,7 +39,7 @@ p.AdvisorText
 {
 	position:relative;
 	top:-40px;
-	padding-left: 450px;
+	left:450px;
 	width:5%;
 	display:inline;
 	word-spacing: 60px;
@@ -65,6 +63,11 @@ a.headerLinks:visited
 a.headerLinks:hover
 {
 	background-color:gray;
+}
+
+a.headerLinks:active
+{
+	background-color:black;
 }
 
 #leftImg
@@ -237,7 +240,7 @@ p.paraBox
 	margin-top:0;
 }
 
-.img
+.imgFooter
 {
 	float:left;
 }
