@@ -74,6 +74,7 @@ a.headerLinks:visited
 img.banner
 {
 	height:415px;
+	width:667px;
 }
 
 
@@ -109,7 +110,6 @@ img.banner
 
 	display:block;
 	border: 2px solid white;
-	box-shadow:rgba(0,0,0,0.5) 0px 0px 10px;
 
 
 
@@ -164,7 +164,6 @@ img.banner
 	background:#38a6a6;
 	border: 2px solid white;
 	margin-top: 5px;
-	box-shadow:rgba(0,0,0,0.5) 0px 0px 10px;
 }
 
 p.paraBox
@@ -196,9 +195,10 @@ p.paraBox
 
 .contents
 {
+	display:inline-block;
+	vertical-align: middle;
+	margin-bottom: 0;
 	font-size:12px;
-	float:left;
-	padding-bottom:20px;
 	padding-left:10px;
 	font-weight: bold;
 	margin-top:0;
@@ -206,8 +206,8 @@ p.paraBox
 
 .imgFooter
 {
-	float:left;
-	padding-top:8px;
+	display:inline-block;
+	vertical-align: middle;
 }
 
 .clearfix
@@ -215,6 +215,10 @@ p.paraBox
 	clear:both;
 }
 
+.shadows
+{
+	box-shadow:rgba(0,0,0,0.5) 0px 2px 4px; 
+}
 
 
 
