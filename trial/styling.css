@@ -1,0 +1,45 @@
+.container
+{
+	width:270px;
+	height:320px;
+	margin: 0 auto;
+	overflow:hidden;
+}
+
+
+.imageContainer
+{
+	overflow: hidden;
+	width:900px;
+	height:300px;
+	margin:30px auto;
+}
+
+img
+{
+	width: 250px;
+	height:250px;
+	border: 10px solid gray;
+}
+
+
+.navi{
+	position:absolute;
+	top: 190px;
+	height: 50px;
+	width: 30px;
+	opacity: 0.6;
+}
+.navi:hover{
+	opacity: 0.9;
+}
+#prev{
+	background: #000 url('resources/left_arrow.png') no-repeat center;
+	left: 460px;
+}
+#next{
+	background: #000 url('resources/right_arrow.png') no-repeat center;
+	right: 460px;
+}
+
+

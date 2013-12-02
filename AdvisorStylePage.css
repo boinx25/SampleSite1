@@ -79,6 +79,7 @@ img.banner
 }
 
 
+
 #rightButtons
 {
 	width: 29%;
@@ -162,7 +163,7 @@ img.banner
 
 #paraBox
 {
-	height:242px;
+	height:241px;
 	background:#38a6a6;
 	border: 2px solid white;
 	margin-top: 5px;
