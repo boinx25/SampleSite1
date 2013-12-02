@@ -62,11 +62,12 @@ a.headerLinks:visited
 
 #leftImg
 {
-	width:70%;
-	margin:0 auto;
+	width: 70%;
+	margin: 0 auto;
 	padding-top: 50px;
-	padding-bottom:50px;
-	float:left;
+	padding-bottom: 50px;
+	display: inline-block;
+
 }
 
 
@@ -74,16 +75,17 @@ a.headerLinks:visited
 img.banner
 {
 	height:415px;
-	width:667px;
+	width:671px;
 }
 
 
 #rightButtons
 {
-	width:30%;
+	width: 29%;
 	margin: 0 auto;
-	float:right;
 	padding-top: 50px;
+	display: inline-block;
+	vertical-align: top;
 }
 
 
@@ -160,7 +162,7 @@ img.banner
 
 #paraBox
 {
-	height:234px;
+	height:242px;
 	background:#38a6a6;
 	border: 2px solid white;
 	margin-top: 5px;
