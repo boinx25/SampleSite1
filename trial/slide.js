@@ -1,47 +1,34 @@
 $(document).ready(function()
 
 {
-	
-
 	$("#next").on('click',function()
 	{
-		var currentMargin = ($(".imageContainer").css("margin-left"));
-		console.log(currentMargin);
-		currentMargin=currentMargin.replace("px","");
-		var finalMargin = parseInt(currentMargin) -275;
 		
 
-		
-		if(finalMargin  > -1344)
-		{
-
-			$(".imageContainer").animate({"margin-left":finalMargin +"px"},1000,function()
+			$(".imageContainer").animate({"margin-left":"-100%"},1000,function()
 			{
-			
+
+
+				$(".imageContainer img:first-child").appendTo(".imageContainer");
+				$(".imageContainer").css("margin-left", "0");		
 
 			});
-		}
+
 	});
 
 
 	$("#prev").on('click',function()
 	{
-		var currentMargin = ($(".imageContainer").css("margin-left"));
-		currentMargin=currentMargin.replace("px","");
-		var finalMargin = parseInt(currentMargin) + 275;
-		
-
-
-		
-		if(finalMargin <=0)
-		{
-
-			$(".imageContainer").animate({"margin-left":finalMargin +"px"},1000,function()
-			{
+	
+			$(".imageContainer img:last-child").prependTo(".imageContainer");
+			$(".imageContainer").css("margin-left", "-100%");		
 			
+			$(".imageContainer").animate({"margin-left":"0px"},1000,function()
+			{
+
+				
 
 			});
-		}
 	});
 
 
