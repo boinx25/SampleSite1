@@ -6,12 +6,13 @@ $(document).ready(function()
 	$("#next").on('click',function()
 	{
 		var currentMargin = ($(".imageContainer").css("margin-left"));
+		console.log(currentMargin);
 		currentMargin=currentMargin.replace("px","");
 		var finalMargin = parseInt(currentMargin) -275;
 		
 
 		
-		if(finalMargin > -825)
+		if(finalMargin  > -1344)
 		{
 
 			$(".imageContainer").animate({"margin-left":finalMargin +"px"},1000,function()

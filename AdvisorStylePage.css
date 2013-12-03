@@ -8,6 +8,52 @@ body
 	width:960px;
 	margin: 0 auto;
 }
+/*Slider*/
+.Imageslider
+{
+		overflow: hidden;
+		width:2020px;
+		height:415px;
+		margin: 0 auto;
+	
+}
+
+.navi{
+	position:absolute;
+	top: 410px;
+	height: 50px;
+	margin: 0 auto;
+	width: 40px;
+	opacity: 0;
+	-ms-filter: alpha(opacity=0);
+	filter: alpha(opacity=0);
+	-webkit-transition: opacity 0.25s linear;
+	-moz-transition: opacity 0.25s linear;
+	-ms-transition: opacity 0.25s linear;
+	-o-transition: opacity 0.25s linear;
+	transition: opacity 0.25s linear;
+
+}
+
+.content:hover .navi
+{
+	display:block;
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+
+
+#prev{
+	background:url('resources/left_arrow.png') no-repeat center;
+	left: 190px;
+	
+}
+#next{
+	background:url('resources/right_arrow.png') no-repeat center;
+	left: 770px;
+}
+
+/*end of SLider*/
 
 #header
 {
@@ -67,6 +113,7 @@ a.headerLinks:visited
 	padding-top: 50px;
 	padding-bottom: 50px;
 	display: inline-block;
+	overflow:hidden;
 
 }
 
@@ -75,7 +122,8 @@ a.headerLinks:visited
 img.banner
 {
 	height:415px;
-	width:671px;
+	width:670px;
+	display:inline;
 }
 
 
@@ -163,7 +211,7 @@ img.banner
 
 #paraBox
 {
-	height:241px;
+	height:235px;
 	background:#38a6a6;
 	border: 2px solid white;
 	margin-top: 5px;
@@ -222,6 +270,8 @@ p.paraBox
 {
 	box-shadow:rgba(0,0,0,0.5) 0px 2px 4px; 
 }
+
+
 
 
 
