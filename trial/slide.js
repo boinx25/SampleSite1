@@ -6,20 +6,17 @@ $(document).ready(function()
 	$("#next").on('click',function()
 	{
 		var currentMargin = ($(".imageContainer").css("margin-left"));
-		// console.log(currentMargin);
 		currentMargin=currentMargin.replace("px","");
-		// console.log(currentMargin);
-		var finalMargin = parseInt(currentMargin);
-		var NextMargin = (finalMargin - 275);
-		// console.log(NextMargin);
+		var finalMargin = parseInt(currentMargin) -275;
+		
 
 		
-		if(NextMargin > -825)
+		if(finalMargin > -825)
 		{
 
-			$(".imageContainer").animate({"margin-left":NextMargin +"px"},1000,function()
+			$(".imageContainer").animate({"margin-left":finalMargin +"px"},1000,function()
 			{
-			// console.log($(this).css("margin-left"));
+			
 
 			});
 		}
@@ -29,20 +26,18 @@ $(document).ready(function()
 	$("#prev").on('click',function()
 	{
 		var currentMargin = ($(".imageContainer").css("margin-left"));
-		// console.log(currentMargin);
 		currentMargin=currentMargin.replace("px","");
-		// console.log(currentMargin);
-		var finalMargin = parseInt(currentMargin);
-		var NextMarginPrev = (finalMargin + 275);
-		console.log(NextMarginPrev);
+		var finalMargin = parseInt(currentMargin) + 275;
+		
+
 
 		
-		if(NextMarginPrev <=0)
+		if(finalMargin <=0)
 		{
 
-			$(".imageContainer").animate({"margin-left":NextMarginPrev +"px"},1000,function()
+			$(".imageContainer").animate({"margin-left":finalMargin +"px"},1000,function()
 			{
-			// console.log($(this).css("margin-left"));
+			
 
 			});
 		}
