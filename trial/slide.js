@@ -10,7 +10,7 @@ $(document).ready(function()
 
 
 				$(".imageContainer img:first-child").appendTo(".imageContainer");
-				$(".imageContainer").css("margin-left", "0");		
+				$(".imageContainer").css("margin-left", "0px");		
 
 			});
 
