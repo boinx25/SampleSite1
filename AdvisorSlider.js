@@ -23,7 +23,7 @@ $(document).ready(function()
 	function onPreviousSlide()
 	{
 			$(".Imageslider img:last-child").prependTo(".Imageslider");
-			$(".Imageslider").css("margin-left", "-100%");		
+			$(".Igmageslider").css("margin-left", "-100%");		
 			
 			$(".Imageslider").animate({"margin-left":"0px"},1000);
 	}
@@ -81,17 +81,17 @@ $(document).ready(function()
 			{
 				clearInterval(autoplay);
 				autoplay = setInterval(function()
-			{
+				{
 
-				$(".Imageslider").animate({"margin-left":"-100%"},1000,function()
-			{
+					$(".Imageslider").animate({"margin-left":"-100%"},1000,function()
+					{
 
-				$(".Imageslider img:first-child").appendTo(".Imageslider");
-				$(".Imageslider").css("margin-left", "0px");		
+						$(".Imageslider img:first-child").appendTo(".Imageslider");
+						$(".Imageslider").css("margin-left", "0px");		
 
-			});
+					});
 
-			},4000);
+				},4000);
 			});
 
 });	
