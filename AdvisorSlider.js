@@ -28,9 +28,10 @@ $(document).ready(function()
 
 	function Pause()
 	{
+			clearInterval(autoplay);
 			$('#play').show(100);
 			$('#pause').hide(300);
-			clearInterval(autoplay);
+			
 	}
 
 
@@ -64,7 +65,7 @@ $(document).ready(function()
 				$('#pause').show(100);
 				$('#play').hide(300);
 				
-	
+			clearInterval(autoplay);
 			autoplay = setInterval(function()
 			{
 		
@@ -84,9 +85,6 @@ $(document).ready(function()
 			$('#pause').click(Pause);
 
 
-
-
-
 			$('.Imageslider').mouseover(function()
 			{
 				clearInterval(autoplay);
@@ -97,6 +95,7 @@ $(document).ready(function()
 				clearInterval(autoplay);
 				autoplay = setInterval(function()
 			{
+
 				$(".Imageslider").animate({"margin-left":"-100%"},1000,function()
 			{
 
