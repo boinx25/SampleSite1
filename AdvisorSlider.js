@@ -26,6 +26,14 @@ $(document).ready(function()
 			$(".Imageslider").animate({"margin-left":"0px"},1000);
 	}
 
+	function Pause()
+	{
+			$('#play').show(100);
+			$('#pause').hide(300);
+			clearInterval(autoplay);
+	}
+
+
 
 
 	$("#next").click(onNextSlide);
@@ -73,12 +81,7 @@ $(document).ready(function()
 			});
 
 	
-			$('#pause').on('click',function()
-				{
-					$('#play').show(100);
-					$('#pause').hide(300);
-					clearInterval(autoplay);
-				});
+			$('#pause').click(Pause);
 
 
 
@@ -94,8 +97,7 @@ $(document).ready(function()
 				clearInterval(autoplay);
 				autoplay = setInterval(function()
 			{
-
-			$(".Imageslider").animate({"margin-left":"-100%"},1000,function()
+				$(".Imageslider").animate({"margin-left":"-100%"},1000,function()
 			{
 
 				$(".Imageslider img:first-child").appendTo(".Imageslider");
