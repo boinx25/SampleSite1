@@ -6,7 +6,7 @@ $(document).ready(function()
 
 	function onNextSlide()
 	{
-// timeout
+// timeout edited
 			$(".Imageslider").animate({"margin-left":"-100%"},1000,function()
 			{
 
