@@ -46,31 +46,32 @@ body
 #prev{
 	background:url('resources/left_arrow.png') no-repeat center;
 	left: 190px;
-	
 }
 #next{
 	background:url('resources/right_arrow.png') no-repeat center;
 	left: 770px;
 }
 
-.autop
+/*.autop
 {
 	position:absolute;
 	top:580px;
 	height:50px;
 	width:50px;
-}
+}*/
 
 #play
 {
 	background:url('resources/play2.png') no-repeat center;
 	left:750px;
+	top:580px;
 }
 
 #pause
 {
 	background: url('resources/pause.png') no-repeat center;
 	left:750px;
+	top:580px;
 }
 
 

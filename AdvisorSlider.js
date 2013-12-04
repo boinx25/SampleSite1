@@ -1,8 +1,10 @@
 $(document).ready(function()
 
 {
-	$("#play").hide(200);
+	$("#pause").hide(200);
 	var autoplay = null;
+	var isAutoPlay = false;
+	var isHovering= false;
 
 	function onNextSlide()
 	{
@@ -43,21 +45,6 @@ $(document).ready(function()
 
 	$("#prev").click(onPreviousSlide);
 
-
-	
-	autoplay = setInterval(function()
-	{
-		
-			$(".Imageslider").animate({"margin-left":"-100%"},1000,function()
-			{
-
-
-				$(".Imageslider img:first-child").appendTo(".Imageslider");
-				$(".Imageslider").css("margin-left", "0px");		
-
-			});
-
-	},4000);
 
 
 			$('#play').on('click',function()
