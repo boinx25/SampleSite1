@@ -30,14 +30,11 @@ $(document).ready(function()
 
         function Pause()
         {
-        				if(isAutoPlay == isAutoPlay)
-        				{
+        				isAutoPlay = false;
                         clearInterval(autoplay);
                         $('#play').show(100);
                         $('#pause').hide(300);
-                    	}else
-                    	{}
-                        
+                                       
         }
 
 
@@ -55,11 +52,12 @@ $(document).ready(function()
              {
                    $('#pause').show(100);
                    $('#play').hide(300);
+                   isAutoPlay = true;
+                   isHovering = true;
                    
-                   if(isAutoPlay == isAutoPlay)
+                   if(!isHovering)
                    {
 
-                   
                       clearInterval(autoplay);
                       autoplay = setInterval(function()
                       {
@@ -71,33 +69,33 @@ $(document).ready(function()
                             $(".Imageslider img:first-child").appendTo(".Imageslider");
                             $(".Imageslider").css("margin-left", "0px");                
 
-                        		console.log("abc");
+                                        console.log("abc");
                         });
 
                       },4000);
                     }
+                    else
+                    {}
            });
         
                         $('#pause').click(Pause);
 
 
-                        $('.Imageslider').mouseover(function()
+                        $('#leftImg').mouseenter(function()
                         {
+                        		isHovering = true;
                                 clearInterval(autoplay);
-                                $('#play').show(100);
-                        		$('#pause').hide(200);
                         });
 
                         $('#leftImg').mouseleave(function()
                         {
-                        		$('#pause').show(100);
-                        		$('#play').hide(200);
+                        		isHovering = false;
                                 clearInterval(autoplay);
-                                if(isAutoPlay !== isAutoPlay, isHovering == isHovering )
+                                if(isAutoPlay)
                                 {
-                                	console.log("hello");
-                                	autoplay = setInterval(function()
-                                	{
+                                        console.log("hello");
+                                        autoplay = setInterval(function()
+                                        {
 
                                         $(".Imageslider").animate({"margin-left":"-100%"},1000,function()
                                         {
@@ -107,11 +105,11 @@ $(document).ready(function()
 
                                         });
 
-                                	},4000);
-                            	}else
-                            	   {
-                            		console.log("abc");
-                            	   }
+                                        },4000);
+                                    }else
+                                       {
+                                            console.log("abc");
+                                       }
                         });
 
 });        
