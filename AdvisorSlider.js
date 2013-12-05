@@ -5,10 +5,25 @@ $(document).ready(function()
         var autoplay = null;
         var isAutoPlay = false;
         var isHovering= false;
+        var totalCount = ($(".banner").length);
+        var current = 1;
+        $("#counter").text(current + "/" + totalCount);
+        
+ 
+
 
         function onNextSlide()
-        {
+        { 	
+        	
+        	current++;
+        	if(current > totalCount)
+        	{
 
+        		current=1;	
+        	}
+
+        	$("#counter").text(current + "/" + totalCount);
+        		
                         $(".Imageslider").animate({"margin-left":"-100%"},1000,function()
                         {
 
@@ -18,19 +33,29 @@ $(document).ready(function()
 
                         });
 
+                      
+ 						
+
         }
 
         function onPreviousSlide()
         {
+        	current--; 
+        		if(current == 0)
+        		{
+        		current = totalCount;	
+        		}
+        		$("#counter").text(current + "/" + totalCount);
+
                         $(".Imageslider img:last-child").prependTo(".Imageslider");
-                        $(".Igmageslider").css("margin-left", "-100%");                
+                        $(".Imageslider").css("margin-left", "-100%");                
                         
                         $(".Imageslider").animate({"margin-left":"0px"},1000);
         }
 
         function Pause()
         {
-        				isAutoPlay = false;
+                        isAutoPlay = false;
                         clearInterval(autoplay);
                         $('#play').show(100);
                         $('#pause').hide(300);
@@ -57,59 +82,37 @@ $(document).ready(function()
                    
                    if(!isHovering)
                    {
-
+                   	  
                       clearInterval(autoplay);
-                      autoplay = setInterval(function()
-                      {
-                
-                            $(".Imageslider").animate({"margin-left":"-100%"},1000,function()
-                        {
-
-
-                            $(".Imageslider img:first-child").appendTo(".Imageslider");
-                            $(".Imageslider").css("margin-left", "0px");                
-
-                                        console.log("abc");
-                        });
-
-                      },4000);
+                      autoplay = setInterval(onNextSlide,4000);
                     }
                     else
                     {}
+
            });
         
-                        $('#pause').click(Pause);
+        $('#pause').click(Pause);
 
 
-                        $('#leftImg').mouseenter(function()
+            $('#leftImg').mouseenter(function()
+               {
+                	isHovering = true;
+                    clearInterval(autoplay);
+               });
+
+            $('#leftImg').mouseleave(function()
+               {
+                    isHovering = false;
+                    clearInterval(autoplay);
+                    if(isAutoPlay)
                         {
-                        		isHovering = true;
-                                clearInterval(autoplay);
-                        });
-
-                        $('#leftImg').mouseleave(function()
-                        {
-                        		isHovering = false;
-                                clearInterval(autoplay);
-                                if(isAutoPlay)
-                                {
-                                        console.log("hello");
-                                        autoplay = setInterval(function()
-                                        {
-
-                                        $(".Imageslider").animate({"margin-left":"-100%"},1000,function()
-                                        {
-
-                                                $(".Imageslider img:first-child").appendTo(".Imageslider");
-                                                $(".Imageslider").css("margin-left", "0px");                
-
-                                        });
-
-                                        },4000);
-                                    }else
-                                       {
-                                            console.log("abc");
-                                       }
+                            console.log("hello");
+                            autoplay = setInterval(onNextSlide,4000);
+                        }	
+                        else
+                           {
+                            console.log("abc");
+                           }
                         });
 
 });        
